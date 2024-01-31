@@ -7,8 +7,13 @@
 /*Menu*/
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
+  padding-right: 50px;
 }
 
 nav {
@@ -17,6 +22,7 @@ nav {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 a:hover {
@@ -40,7 +46,6 @@ p {
 /*Kategori*/
 .kategoriliste_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 20px;
   color: aliceblue;
@@ -78,6 +83,12 @@ p {
   padding-bottom: 7px;
 }
 
+.pris_text {
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
 .a {
   font-size: 15px;
   text-decoration: underline;
@@ -90,17 +101,31 @@ p {
   padding-left: 50px;
 }
 
+.read_more {
+  text-decoration: underline;
+}
+
+.tilbud_box {
+  position: relative;
+}
+.tilbud {
+  background: red;
+  padding: 5px;
+  position: absolute;
+  top: -13px;
+  right: 70px;
+}
+
+.rabat {
+  background: grey;
+  padding: 5px;
+  position: absolute;
+}
+
 /*Produkt*/
-.navn {
-  font-weight: 400;
-}
-
-.farve {
-  font-weight: 400;
-}
-
-.inventory {
-  font-weight: 400;
+.underrubrik {
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 .information {
@@ -133,5 +158,52 @@ p {
   .produkt {
     justify-content: center;
     padding-left: 10px;
+  }
+
+  /*Kategori*/
+  .kategoriliste_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 50px;
+    color: aliceblue;
+
+    .kategori {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .kategori_h2 {
+      padding-top: 50px;
+    }
+  }
+
+  /*Menu*/
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 1120px;
+  }
+
+  nav {
+    padding: 15px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: black;
   }
 }
